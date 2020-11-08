@@ -1,0 +1,52 @@
+<!-- <html>
+<head>
+<style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+</style>
+<body>
+  <script>
+<div class="myDiv">
+  <h2>This is a heading in a div element</h2>
+  <p>This is some text in a div element.</p>
+</div>
+
+
+// var text = "";
+// var i;
+// for (i = 0; i < 5; i++) {
+//   text += "The number is " + i + "<br>";
+
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabel</title>
+</head>
+<body style="text-align: center;">
+
+<div id ="PrintTable">
+  </div>  
+<script>
+  function printtable(){
+    var num=2;
+    //num=Number(document.getElementById('textNumber').value);
+    for (var i=1; i<=12;i++){
+      var a=document.createElement("p")
+      a.innerHTML=(num*i)+"<br/>"
+      document.getElementById('PrintTable').appendChild(a);
+     
+    }
+  }
+  printtable()
+</script>
+</body>
+</html>
